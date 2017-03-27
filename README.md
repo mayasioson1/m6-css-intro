@@ -1,28 +1,9 @@
-# Module 7: Introduction to Cascading Style Sheets
+# Introduction to CSS
 
-## Overview
 In this module, you will learn how to manipulate the rendering of HTML elements by writing Cascading Style Sheets (CSS). CSS syntax allows you to specify _how_ you want a web browser to represent elements on your webpage.
 
-<!-- START doctoc generated TOC please keep comment here to allow auto update -->
-<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
-**Contents**
+Helpful links:
 
-- [Resources](#resources)
-- [Writing CSS](#writing-css)
-- [CSS Syntax](#css-syntax)
-- [Selectors](#selectors)
-- [The Cascade](#the-cascade)
-- [Arranging elements](#arranging-elements)
-  - [Display](#display)
-  - [Position](#position)
-- [The Box-Model](#the-box-model)
-- [CSS Units](#css-units)
-  - [Absolute Units](#absolute-units)
-  - [Relative Units](#relative-units)
-
-<!-- END doctoc generated TOC please keep comment here to allow auto update -->
-
-## Resources
 - [CSS Selector Reference](http://www.w3schools.com/cssref/css_selectors.asp)
 - [CSS Properties Reference](http://www.w3schools.com/cssref/default.asp)
 - [CSS Selector Specificity](https://www.smashingmagazine.com/2007/07/css-specificity-things-you-should-know/)
@@ -112,7 +93,7 @@ However, there are a few more important pieces of logic that you need to underst
 2. _Order_ matters: If a later rule selects an element and sets the same _property_ to a different _value_, the later rule's setting overrides.
 3. _Specificity_ matters: The specificity with which elements are selected may override the order in which they are applied. More specific selection (i.e., `id` > `class` > `type`) will take precedence (more on that [here](https://www.smashingmagazine.com/2007/07/css-specificity-things-you-should-know/)).
 
-To practice making basic selections and assigning styles, head over to [exercise-1](exercise-1).
+To practice making basic selections and assigning styles, head over to [exercise-1](http://github.com/info474-s17/m6-css-intro/tree/master/exercise-1).
 
 ## Arranging elements
 Elements naturally arrange themselves on the page (from top to bottom, left to right) based on their size.
@@ -130,7 +111,7 @@ Each HTML element has a default `display` property that indicates how it will ho
 
 Here is an example of how block, inline, and inline-block elements arrange themselves:
 
-![block and inline block elements](imgs/block-elements.png)
+![block and inline block elements](m6-imgs/block-elements.png)
 
 As you can see, the `block` level elements take up an entire row, regardless of the size of their contents. The `inline` and `inline-block` elements only take up as much horizontal space as is necessary. Unlike the `inline` element, the height of the `inline-block` is able to be set using CSS.
 
@@ -145,7 +126,7 @@ In addition to _how_ you wish elements to be displayed, you can also manipulate 
 
 >**Absolute**: The _absolute_ position allows you to place an element a specific number of pixels from it's parent element.  
 
-To practice manipulating the position of elements, head over to [exercise-2](exercise-2).
+To practice manipulating the position of elements, head over to [exercise-2](http://github.com/info474-s17/m6-css-intro/tree/master/exercise-2).
 
 ## The Box-Model
 The amount of space taken up by each element is best explained by the [box-model](http://www.w3schools.com/css/css_boxmodel.asp).  Think of each HTML element as some content in a box.  The amount of space occupied by that box depends on:
@@ -156,7 +137,7 @@ The amount of space taken up by each element is best explained by the [box-model
 
 Manipulating these properties allows you to specify how your content should be arranged on the page:
 
-![box-model](imgs/box-model.png)
+![box-model](m6-imgs/box-model.png)
 
 ## CSS Units
 There are a variety of units available to you for declaring the size of elements, and the amount of space between them. Units can be specified either in **absolute** or **relative** values, each of which has some advantages.
